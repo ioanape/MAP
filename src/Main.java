@@ -7,6 +7,7 @@ import java.util.List;
 import static Aufgabe1.Note.*;
 import static Aufgabe2.Zahlen.*;
 import static Aufgabe3.Grossezahlen.*;
+import static Aufgabe4.Elektronik.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -30,5 +31,13 @@ public class Main {
         System.out.println(Arrays.toString(differenz(zahl2, zahl1)));
         System.out.println(Arrays.toString(multiplikation(zahl2, 2)));
         System.out.println(Arrays.toString(division(zahl2, 2)));
+
+
+        int[] tastatur={15, 20, 10, 35};
+        int[] usb={20, 15, 40 ,15};
+        System.out.println((billigstetastatur(tastatur)));
+        System.out.println(teuerstengegenstand(tastatur,usb));
+        System.out.println(teurstebuget(usb,35));
+        System.out.println(maximalengeld(tastatur,usb,70));
         }
     }
